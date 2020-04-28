@@ -1,6 +1,5 @@
 import React from 'react';
-import { Container, Row, Col } from 'reactstrap';
-import Profile from './Profile'
+import { Container, Col } from 'reactstrap';
 import Project from './Project'
 import Project2 from './Project2'
 import Project3 from './Project3';

@@ -1,6 +1,6 @@
 import React from 'react';
 import {
-  CardGroup, Card, Col
+ Col
 } from 'reactstrap';
 
 

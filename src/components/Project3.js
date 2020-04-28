@@ -8,7 +8,7 @@ const Project3 = () => {
 
 
     return (
-        <Container classNameName='text-center mx-auto py-2 border rounded border-dark shadow mt-3 whiteshade'>
+        <Container className='text-center mx-auto py-2 border rounded border-dark shadow mt-3 whiteshade'>
 
             <div className="container-fluid">
                 <div className="row portfolioRow" id="captClown">
