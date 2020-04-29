@@ -1,38 +1,35 @@
 import React from 'react';
 import {
-  Container
+    Container, CardBody, CardSubtitle, CardText, Card, CardTitle, Row, Col
 } from 'reactstrap';
 
 
 const Project = () => {
-
-
-  return ( 
-    <Container className='text-center mx-auto py-2 border rounded border-dark shadow mt-3 whiteshade'>
-
-    <div className="container-fluid">
-        <div className="row portfolioRow" id="gamenation-bg">
-             <div className="col-3 text-center align-self-center">
-                <div className="rowtitle text-dark">
-                    <h1 className="rowRepotitle gamenation-link">GameNation</h1>
-                    <p className="rowRepo" id="gamenation-repo">Repository</p>
-                </div>
-                <div className="card bg-transparent mx-auto border-dark">
-                    <div className="cardbkg card-body text-dark">
-                        <h5 className="card-title">Primary Technologies</h5>
-                        <h6 className="card-subtitle">Full Stack</h6>
-                        <p className="card-text">React <br /> Express <br /> MongoDB <br /> Node.js </p>
-                    </div>
-                </div>
-            </div>
-            <div className="col">
-                <div className="gamenation-link appexample mx-auto my-3 card bg-transparent border-dark text-dark">
-                    <img src="images/gameNationss.png" className="card-img rowimg" alt="gamenation-app" />
-                </div>
-            </div>
-        </div>
-    </div>
-</Container>
-    )}
+    return (
+        <Container className='text-center mx-auto py-2 border rounded border-dark shadow mt-3 whiteshade'>
+            <Row className="my-auto mx-2 py-2">
+                <Col md="4" lg="3" >
+                    <h2 className="mt-auto mb-2 mx-auto"><a className="text-dark textshadows" href="https://gamenationapp.herokuapp.com/">GameNation</a></h2>
+                    <Card color="transparent" className="border rounded border-dark mx-auto shadow">
+                        <CardBody className="whiteshade">
+                            <CardTitle><b>Primary Technologies</b></CardTitle>
+                            <CardSubtitle className="mb-1"><b>Full Stack</b></CardSubtitle>
+                            <CardText>React</CardText>
+                            <CardText>Express</CardText>
+                            <CardText>MongoDB</CardText>
+                            <CardText>Node.js</CardText>
+                        </CardBody>
+                    </Card>
+                    <p className="my-3"><a href="https://github.com/Zayd-Sarraj/Project-3" className="mx-auto text-dark textshadows">Visit Repo</a></p>
+                </Col>
+                <Col className="mx-1 my-auto">
+                    <Card className="border rounded border-dark mx-auto my-auto shadow">
+                        <img src="images/gameNationss.png" className="card-img" alt="gamenation-app" />
+                    </Card>
+                </Col>
+            </Row>
+        </Container>
+    )
+}
 
 export default Project;

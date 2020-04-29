@@ -1,36 +1,41 @@
 import React from 'react';
 import {
-    Container
+    Container, CardBody, CardText, Card, CardSubtitle, CardTitle, Row, Col
 } from 'reactstrap';
 
 
-const Project3 = () => {
 
-
+const Project3 = (props) => {
     return (
         <Container className='text-center mx-auto py-2 border rounded border-dark shadow mt-3 whiteshade'>
-
-            <div className="container-fluid">
-                <div className="row portfolioRow" id="captClown">
-                    <div className="col">
-                        <div className="caption-clown-link appexample mx-auto my-3 card bg-transparent border-dark text-dark">
-                            <img src="images/captClown.png" className="card-img rowimg" alt="caption-clown-app" />
-                        </div>
-                    </div>
-                    <div className="col-3 text-center align-self-center">
-                        <div className="rowtitle text-dark">
-                            <h1 className="rowRepotitle caption-clown-link">Caption Clown</h1>
-                            <p className="rowRepo" id="caption-clown-repo">Repository</p>
-                        </div>
-                        <div className="card bg-transparent mx-auto border-dark">
-                            <div className="cardbkg card-body text-dark">
-                                <h5 className="card-title">Primary Technologies</h5>
-                                <p className="card-text">Javascript <br /> MySQL <br /> Sequelize <br /> Handlebars </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            <Row className="my-auto mx-2 py-2">
+                {props.value.width > 768 &&
+                <Col className="mx-1 my-auto">
+                    <Card className="border rounded border-dark mx-auto my-auto shadow">
+                        <img src="images/captClown.png" className="card-img" alt="topiks-app" />
+                    </Card>
+                </Col>}
+                <Col md="4" lg="3" >
+                    <h2 className="mt-4 mb-4 mx-auto"><a className="text-dark textshadows" href="https://gamenationapp.herokuapp.com/">Caption Clown</a></h2>
+                    <Card color="transparent" className="border rounded border-dark mx-auto mt-4 shadow">
+                        <CardBody className="whiteshade">
+                            <CardTitle><b>Primary Technologies</b></CardTitle>
+                            <CardSubtitle className="mb-1"><b>Full Stack</b></CardSubtitle>
+                            <CardText>Sequelize</CardText>
+                            <CardText>MySQL</CardText>
+                            <CardText>Handlebars</CardText>
+                            <CardText>Javascript</CardText>
+                        </CardBody>
+                    </Card>
+                    <p className="my-4"><a href="https://github.com/Zayd-Sarraj/Project-2" className="mx-auto text-dark textshadows">Visit Repo</a></p>
+                </Col>
+                {props.value.width < 769 &&
+                <Col className="mx-1 my-auto">
+                    <Card className="border rounded border-dark mx-auto my-auto shadow">
+                        <img src="images/captClown.png" className="card-img" alt="topiks-app" />
+                    </Card>
+                </Col>}
+            </Row>
         </Container>
     )
 }
