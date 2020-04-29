@@ -9,7 +9,7 @@ const Project2 = (props) => {
         <Container className='text-center mx-auto py-2 border rounded border-dark shadow mt-3 whiteshade'>
             <Row className="my-auto mx-2 py-2">
                 <Col md="4" lg="3" >
-                    <h2 className="mt-4 mb-4 mx-auto"><a className="text-dark textshadows" href="https://gamenationapp.herokuapp.com/">Topiks</a></h2>
+                    <h2 className="mt-4 mb-4 mx-auto"><a className="text-dark textshadows" href="https://zayd-sarraj.github.io/Project-1/">Topiks</a></h2>
                     <Card color="transparent" className="border rounded border-dark mx-auto mt-4 shadow">
                         <CardBody className="whiteshade">
                             <CardTitle><b>Primary Technologies</b></CardTitle>

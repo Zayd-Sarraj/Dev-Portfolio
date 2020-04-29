@@ -16,7 +16,7 @@ const Project5 = (props) => {
                         </Card>
                     </Col>}
                 <Col md="4" lg="3" >
-                    <h2 className="my-5 mx-auto"><a className="text-dark textshadows" href="https://gamenationapp.herokuapp.com/">Note Taker App</a></h2>
+                    <h2 className="my-5 mx-auto"><a className="text-dark textshadows" href="https://sleepy-harbor-86048.herokuapp.com/">Note Taker App</a></h2>
                     <Card color="transparent" className="border rounded border-dark mx-auto mt-5 shadow">
                         <CardBody className="whiteshade">
                             <CardTitle><b>Primary Technologies</b></CardTitle>
@@ -26,7 +26,7 @@ const Project5 = (props) => {
                             <CardText>Heroku</CardText>
                         </CardBody>
                     </Card>
-                    <p className="my-5"><a href="https://github.com/Zayd-Sarraj/Project-2" className="mx-auto text-dark textshadows">Visit Repo</a></p>
+                    <p className="my-5"><a href="https://github.com/Zayd-Sarraj/Note-taker" className="mx-auto text-dark textshadows">Visit Repo</a></p>
                 </Col>
                 {props.value.width < 769 &&
                     <Col className="mx-1 my-auto">
