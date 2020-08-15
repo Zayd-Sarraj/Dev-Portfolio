@@ -23,6 +23,9 @@ const Home = (props) => {
                     <Col sm="3" className='text-center mx-auto py-2 border rounded border-dark shadow mt-3 whiteshade'>
                         <div className="textshadows"> <a href="https://www.linkedin.com/in/zayd-sarraj-445930196/" class=" text-dark mx-2 fa fa-linkedin"></a></div>
                     </Col>
+                    <Col sm="3" className='text-center mx-auto py-2 border rounded border-dark shadow mt-3 whiteshade'>
+                        <div className="textshadows"><a href="http://zayd-sarraj.herokuapp.com/resume/ZS_Fullstack_Resume_2020.pdf" class="text-dark">Resume</a></div>
+                    </Col>
                 </Row>
             </Container>
 
