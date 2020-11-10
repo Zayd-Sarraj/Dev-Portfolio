@@ -16,7 +16,7 @@ const Project3 = (props) => {
                     </Card>
                 </Col>}
                 <Col md="4" lg="3" >
-                    <h2 className="mt-4 mb-4 mx-auto"><a className="text-dark textshadows" href="https://polar-harbor-60783.herokuapp.com/">Caption Clown</a></h2>
+                    <h2 className="mt-4 mb-4 mx-auto"><a className="text-dark textshadows" href="https://cap-clown.herokuapp.com/">Caption Clown</a></h2>
                     <Card color="transparent" className="border rounded border-dark mx-auto mt-4 shadow">
                         <CardBody className="whiteshade">
                             <CardTitle><b>Primary Technologies</b></CardTitle>
